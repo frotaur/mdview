@@ -1,4 +1,4 @@
-module github.com/charmbracelet/glow/v2
+module github.com/frotaur/mdview
 
 go 1.24.0
 

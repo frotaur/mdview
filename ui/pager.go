@@ -11,7 +11,7 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/glamour"
-	"github.com/charmbracelet/glow/v2/utils"
+	"github.com/frotaur/mdview/utils"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/log"
 	"github.com/fsnotify/fsnotify"
@@ -244,7 +244,7 @@ func (m pagerModel) update(msg tea.Msg) (pagerModel, tea.Cmd) {
 			}
 		}
 
-	// Glow has rendered the content
+	// mdview has rendered the content
 	case contentRenderedMsg:
 		log.Info("content rendered", "state", m.state)
 
@@ -303,7 +303,7 @@ func (m pagerModel) statusBarView(b *strings.Builder) {
 	showStatusMessage := m.state == pagerStateStatusMessage
 
 	// Logo
-	logo := glowLogoView()
+	logo := logoView()
 
 	// Scroll percent
 	percent := math.Max(minPercent, math.Min(maxPercent, m.viewport.ScrollPercent()))

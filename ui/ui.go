@@ -1,4 +1,4 @@
-// Package ui provides the main UI for the glow application.
+// Package ui provides the main UI for the mdview application.
 package ui
 
 import (
@@ -10,8 +10,8 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/glamour/styles"
-	"github.com/charmbracelet/glow/v2/utils"
 	"github.com/charmbracelet/log"
+	"github.com/frotaur/mdview/utils"
 	"github.com/muesli/gitcha"
 	te "github.com/muesli/termenv"
 )
@@ -32,7 +32,7 @@ var (
 // NewProgram returns a new Tea program.
 func NewProgram(cfg Config, content string) *tea.Program {
 	log.Debug(
-		"Starting glow",
+		"Starting mdview",
 		"high_perf_pager",
 		cfg.HighPerformancePager,
 		"glamour",

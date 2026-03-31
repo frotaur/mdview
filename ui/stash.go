@@ -691,7 +691,7 @@ func (m stashModel) view() string {
 		} else if m.filterState == filtering {
 			logoOrFilter += m.filterInput.View()
 		} else {
-			logoOrFilter += glowLogoView()
+			logoOrFilter += logoView()
 			if m.showStatusMessage {
 				logoOrFilter += "  " + m.statusMessage.String()
 			}
@@ -747,8 +747,8 @@ func (m stashModel) view() string {
 	return "\n" + indent(s, stashIndent)
 }
 
-func glowLogoView() string {
-	return logoStyle.Render(" Glow ")
+func logoView() string {
+	return logoStyle.Render(" mdview  ")
 }
 
 func (m stashModel) headerView() string {

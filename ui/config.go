@@ -15,6 +15,6 @@ type Config struct {
 	Path string
 
 	// For debugging the UI
-	HighPerformancePager bool `env:"GLOW_HIGH_PERFORMANCE_PAGER" envDefault:"true"`
-	GlamourEnabled       bool `env:"GLOW_ENABLE_GLAMOUR"         envDefault:"true"`
+	HighPerformancePager bool `env:"MDVIEW_HIGH_PERFORMANCE_PAGER" envDefault:"true"`
+	GlamourEnabled       bool `env:"MDVIEW_ENABLE_GLAMOUR"         envDefault:"true"`
 }
