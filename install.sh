@@ -38,4 +38,4 @@ if ! echo "$PATH" | tr ':' '\n' | grep -qx "$INSTALL_DIR"; then
   echo "   export PATH=\"$INSTALL_DIR:\$PATH\""
 fi
 
-echo "=> Run 'mdview <file.md>' to get started"
+echo "=> Run 'mdview <file.md>' to render a markdown file in your terminal"
